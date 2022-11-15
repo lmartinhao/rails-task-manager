@@ -1,13 +1,11 @@
 <h1>All my tasks</h1>
 
-<ul>
+<div id="tasks-list" class="list-group">
   <% @tasks.each do |task| %>
-    <li><%= link_to task.title, task_path(task) %></li>
+    <li class="list-group-item list-group-item-action"><%= link_to task.title, task_path(task) %></li>
   <% end %>
-</ul>
+</div>
 
-<div>
-  <p>
+<div type="button" class="btn btn-outline-primary" style="margin-top: 30px;">
     <%= link_to 'Add a new task', new_task_path %>
-  </p>
 </div>

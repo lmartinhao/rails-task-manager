@@ -13,3 +13,16 @@
  *= require_tree .
  *= require_self
  */
+
+ a {
+  text-decoration: none;
+  color: rgb(43, 43, 43);
+ }
+
+ a:hover {
+  color: white;
+ }
+
+ #tasks-list a{
+  color: black;
+ }
